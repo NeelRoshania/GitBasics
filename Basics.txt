@@ -2,30 +2,31 @@ Usefull Links:
 	- https://git-scm.com/docs
 	- https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 	- https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
-	- 
+	- Glossary: https://help.github.com/articles/github-glossary/
 
-Create a new repository on the command line
+General workflow,
+	0. Git -> Git is an open source program for tracking changes in text files
+	1. Repository -> A repository is the most basic element of GitHub. They're easiest to imagine as a project's folder. A repository contains all of the project files (including documentation), and stores each file's revision history. Repositories can have multiple collaborators and can be either public or private.
+	2. Branch -> A branch is a parallel version of a repository. It is contained within the repository, but does not affect the primary or master branch allowing you to work freely without disrupting the "live" version.
+	3. Commit -> A commit, or "revision", is an individual change to a file (or set of files). It's like when you save a file, except with Git, every time you save it creates a unique ID (a.k.a. the "SHA" or "hash") that allows you to keep record of what changes were made when and by who. Commits usually contain a commit message which is a brief description of what changes were made.	
+	4. Pull -> Pull refers to when you are fetching in changes and merging them. For instance, if someone has edited the remote file you're both working on, you'll want to pull in those changes to your local copy so that it's up to date.	
 
-echo "# Hello-Github" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/NeelRoshania/Hello-Github.git
-git push -u origin master
+Push data to remote github account:
+	1. Navigate to folder -> git init
+	2. Check status -> git status
+	3. Define files to add to repo -> git add Filename.ext
+	4. Commit to the local repo -> git commit -m "Information about commit"
+	5. Commit to remote repo
+		a. git remote add nameRef https://github.com/NeelRoshania/Hello-Github.git
+	6. Push to repo -> git push repositoryName "Branch"
+		a. error: failed to push some refs to 'https://github.com/NeelRoshania/GitBasics.git' Updates were rejected because the remote contains work that you do not have locally.
+		b. git pull repositoryName "Branch"
+		c. Branch -> Version control either master or custom/developed
+		d. View active and all branches -> git branch
 
-Push an existing repository from the command line
-git remote add origin https://github.com/NeelRoshania/Hello-Github.git
-git push -u origin master
-
-Push commands to remote github account:
-1. Navigate to folder -> git init
-2. Check status -> git status
-3. Define files to add to repo -> git add Filename.ext
-4. Commit to the local repo -> git commit -m "Information about commit"
-5. Commit to remote repo
-	a. git remote add nameRef https://github.com/NeelRoshania/Hello-Github.git
-6. Push to repo -> git push nameRef "Branch"
-	a. error: failed to push some refs to 'https://github.com/NeelRoshania/GitBasics.git' Updates were rejected because the remote contains work that you do not have locally.
-	b. git pull nameRef "Branch"
-	c. Branch -> Version control either master or custom/developed
+Create and manage branches -> https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
+	0. Purpose -> In your github fork, you need to keep your master branch clean, by clean I mean without any changes, like that you can create at any time a branch from your master. Each time that you want to commit a bug or a feature, you need to create a branch for it, which will be a copy of your master branch.
+	1. Create the branch on your local machine and switch in this branch -> git checkout -b [name_of_your_new_branch]
+	2. Change working branch -> git checkout [name_of_your_new_branch]
+	3. Push the branch on github -> git push origin [name_of_your_new_branch]
 	
