@@ -18,6 +18,7 @@ Push data to remote github account:
 	4. Commit to the local repo -> git commit -m "Information about commit"
 	5. Commit to remote repo
 		a. git remote add nameRef https://github.com/NeelRoshania/Hello-Github.git
+		b. get list of remote repo's -> git remote -v
 	6. Push to repo -> git push repositoryName "Branch"
 		a. error: failed to push some refs to 'https://github.com/NeelRoshania/GitBasics.git' Updates were rejected because the remote contains work that you do not have locally.
 		b. git pull repositoryName "Branch"
