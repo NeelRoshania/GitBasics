@@ -1,3 +1,9 @@
+Usefull Links:
+	- https://git-scm.com/docs
+	- https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+	- https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
+	- 
+
 Create a new repository on the command line
 
 echo "# Hello-Github" >> README.md
@@ -11,7 +17,15 @@ Push an existing repository from the command line
 git remote add origin https://github.com/NeelRoshania/Hello-Github.git
 git push -u origin master
 
-General command flow,
+Push commands to remote github account:
 1. Navigate to folder -> git init
 2. Check status -> git status
-3. 
+3. Define files to add to repo -> git add Filename.ext
+4. Commit to the local repo -> git commit -m "Information about commit"
+5. Commit to remote repo
+	a. git remote add nameRef https://github.com/NeelRoshania/Hello-Github.git
+6. Push to repo -> git push nameRef "Branch"
+	a. error: failed to push some refs to 'https://github.com/NeelRoshania/GitBasics.git' Updates were rejected because the remote contains work that you do not have locally.
+	b. git pull nameRef "Branch"
+	c. Branch -> Version control either master or custom/developed
+	
