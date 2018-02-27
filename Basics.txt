@@ -25,6 +25,7 @@ Push data to remote github account:
 		b. git pull repositoryName "Branch"
 		c. Branch -> Version control either master or custom/developed
 		d. View active and all branches -> git branch
+	7. Clone a repo -> git clone
 
 Create and manage branches -> https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
 	0. Purpose -> In your github fork, you need to keep your master branch clean, by clean I mean without any changes, like that you can create at any time a branch from your master. Each time that you want to commit a bug or a feature, you need to create a branch for it, which will be a copy of your master branch.
