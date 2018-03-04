@@ -1,3 +1,6 @@
+Username: NeelRoshania
+Password: Github2306!
+
 Usefull Links:
 	- https://git-scm.com/docs
 	- https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
@@ -43,4 +46,6 @@ Tracking a remote branch -> https://www.git-tower.com/learn/git/faq/track-remote
 	0. git checkout --track origin/dev
 		a. Assuming that you know the name of the branch dev
 		b. Otherwise if this fails: git checkout -b aBranch --track origin/aBranch
+
+Forking a repo -> https://help.github.com/articles/fork-a-repo/
 	
